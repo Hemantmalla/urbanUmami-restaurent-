@@ -133,4 +133,79 @@ ul li a {
     display: none;
     background: transparent;
 }
+
 /* end of index */
+/*about styles*/
+.about {
+    text-align: justify;
+    line-height: 20px;
+    padding: 5px;
+}
+
+.restur {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 20px;
+}
+
+.restur img {
+    width: 90%;
+    height: 70vh;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.about h1 {
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.about h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 23px;
+    cursor: pointer;
+    align-content: center;
+    top: 10px;
+    color: var(--font-color-main);
+    font-family: "Alan Sans", sans-serif;
+}
+
+.about h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #007bff;
+    transition: width 0.4s ease;
+    /* smooth animation */
+}
+
+/* show underline on hover */
+.about h1:hover::after {
+    width: 100%;
+}
+
+/*end of about styles*/
+/*contact pages styles*/
+.contact_img {
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+.para {
+    display: flex;
+    flex-direction: row;
+    gap: 270px;
+    border: 2px solid #596366;
+    border-radius: 20px;
+    background-color: #596366;
+    color:var(--background-color-body);
+    text-align: center;
+    padding: 30px;
+} 
+/*end of contact styles*/

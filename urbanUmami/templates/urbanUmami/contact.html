@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAN UMAMI</title>
+    <link rel="stylesheet" href="{% static 'stylesheets/index.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/contact.css' %}">
+    <script src="https://kit.fontawesome.com/22743b5cbb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar1">
+            <div>
+                <img src="{% static 'images/logo.jpg' %}" alt="Logo" width="80px" height="80px"
+                    style="border-radius: 42px;">
+            </div>
+            <div class="navbar3">
+                <ul>
+                    <li><a href="{% url 'index' %}">URBAN UMAMI</a></li>
+                    <li><a href="{% url 'menu' %}">MENU</a></li>
+                    <li><a href="{% url 'order' %}">ORDERS</a></li>
+                    <li><a href="{% url 'reserve' %}">RESERVE</a></li>
+                    <li><a href="{% url 'about' %}">ABOUT-US</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="{% url 'profile' %}" style="position: relative; left: 60px;">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header><br>
+    <main>
+        <article>
+            <img src="{% static 'images/contact1.png' %}" alt="contact us" class="contact_img">
+        </article>
+        <section>
+            <div class="para">
+                <div>
+                    <h3>Urban Umami</h3>
+                    <p> 12 Flavor Street,<br>New York City, New York 10002</p>
+                </div>
+                <div>
+                    <h3>Contact Details</h3>
+                    <p>Phone: +91 94647554678<br>Email:urbanumami@gmail.com 
+                    </p>
+                </div>
+                <div>
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday: 10:00 AM - 10:00 PM<br>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <div>
+                <h3>URBAN UMAMI</h3>
+                <p>123 Flavor Street,<br>Gourmet City, Foodland 45678<br>Phone: (123) 456-7890<br>Email: urbanumami@gmail.com </p>
+            </div>
+            <div>
+                <h3>Timings</h3>
+                <p>Monday - Friday: 10:00 AM - 10:00 PM<br>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div style="display: flex; flex-direction: row; justify-content: center; gap: 42px;">
+                    <a href="www.facebook.com" style="font-size: 31px; color: #E6D9B9;"><i class="fa-brands fa-facebook"></i></a><br>
+                    <a href="www.instagram.com" style="font-size: 31px; color: #E6D9B9;"><i class="fa-brands fa-instagram"></i></a><br>
+                    <a href="www.x.com" style="font-size: 31px; color: #E6D9B9;"><i class="fa-brands fa-x-twitter"></i></a><br>
+                    <a href="www.linkedin.com" style="font-size: 31px; color: #E6D9B9;"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

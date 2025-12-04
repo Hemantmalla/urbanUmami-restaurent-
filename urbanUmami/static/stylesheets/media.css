@@ -1,0 +1,43 @@
+:root{
+    /* Color Variables */
+    --background-color-navbar: #492911;
+    --background-color-body: #E6D9B9;
+    --background-color-footer: #492911;
+    --text-color-navbar: #E6D9B9;
+    --text-color-footer: #E6D9B9;
+    --text-color-body: #492911;
+
+    /* Font Variables */
+    --font-weight-header: 700;
+    --font-weight-body: 400;
+    --font-weight-footer: 400;
+    --font-size-header: 18px;
+    --font-size-body: 16px;
+    --font-size-footer: 14px;
+    --h1-font-size: 28px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+
+}
+
+@media screen and (max-width: 480px) {
+    .m2, .m3, .navbar3{
+        display: none;
+    }
+    .m1, .m4, .m5{
+        display: grid;
+        width: 30rem;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .m1, .navbar3{
+        display: none;
+    }
+    .m2,.m3, .m4, .m5{
+        display: grid;
+        width: 30rem;
+    }
+    .navbar1{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

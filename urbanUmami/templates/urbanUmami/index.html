@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAN UMAMI</title>
+    <link rel="stylesheet" href="{% static 'stylesheets/index.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/media.css' %}">
+    <script src="https://kit.fontawesome.com/22743b5cbb.js" crossorigin="anonymous"></script>
+    <style>
+        header {
+            background-image: url('{% static "images/banner3.jpg" %}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 27rem;
+            border-radius: 15px;
+            box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.9);
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            width: 5px;
+            height: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar1">
+            <div class="m4">
+                <img src="{% static 'images/logo.jpg' %}" alt="Logo" width="80px" height="80px"
+                    style="border-radius: 42px;">
+            </div>
+            <div class="m1">
+                <select name="" id="">
+                    <option value="">URBAN-UMAMI</option>
+                    <option value="">MENU</option>
+                    <option value="">ORDERS</option>
+                    <option value="">RESERVATION</option>
+                    <option value="">ABOUT-US</option>
+                </select>
+            </div>
+            <div class="m2">
+                <select name="" id="">
+                    <option value="">MENU</option>
+                    <option value="">ORDERS</option>
+                    <option value="">RESERVATION</option>
+                    <option value="">ABOUT-US</option>
+                </select>
+            </div>
+            <div class="m3">
+                <ul>
+                    <li><a href="{% url 'index' %}">URBAN UMAMI</a></li>
+                </ul>
+            </div>
+            <div class="navbar3">
+                <ul>
+                    <li><a href="{% url 'index' %}">URBAN UMAMI</a></li>
+                    <li><a href="{% url 'menu' %}">MENU</a></li>
+                    <li><a href="{% url 'order' %}">ORDERS</a></li>
+                    <li><a href="{% url 'reserve' %}">RESERVE</a></li>
+                    <li><a href="{% url 'about' %}">ABOUT-US</a></li>
+                </ul>
+            </div>
+            <div class="m5">
+                <ul>
+                    <li><a href="{% url 'profile' %}" style="position: relative; left: 60px;">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav> 
+    </header><br><br>
+    <main>
+        <div class="main-container">
+            <div>
+                <ul class="ico" id="ico">
+                    <li><img class="img1" src="{% static 'images/indian1.jpg' %}" alt="INDIAN"></li>
+                    <li><a href="">INDIAN</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ico" id="ico">
+                    <li><img class="img1" src="{% static 'images/chinese1.jpg' %}" alt="CHINESE"></li>
+                    <li><a href="">CHINESE</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ico" id="ico">
+                    <li><img class="img1" src="{% static 'images/continental1.jpg' %}" alt="CONTINENTAL"></li>
+                    <li><a href="">CONTINENTAL</a></li>
+                </ul>
+            </div>
+        </div><br><br>
+        <div>
+            <div style="text-align: center; position: relative; top: -13px; font-size: 21px; font-weight: 600;">
+                RESERVATION</div>
+            <div id="hem">
+                <img src="{% static 'images/reservation1.jpeg' %}" alt="RESERVATION" width="1250px" height="450px"
+                    style="border-radius: 15px; box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.9);">
+            </div>
+        </div><br><br>
+        <div>
+            <h2 style="text-align: center; color: #492911;">ABOUT-US</h2>
+            <p class="pa">
+                Welcome to URBAN UMAMI, where culinary excellence meets a vibrant dining experience. Established in
+                2020, our restaurant has quickly become a beloved destination for food enthusiasts seeking a blend of
+                traditional and contemporary flavors. Our menu is a testament to our commitment to quality, featuring a
+                diverse array of dishes crafted from the freshest ingredients sourced locally and globally. At URBAN
+                UMAMI, we believe that dining is not just about food; it's about creating memorable moments. Our warm
+                and inviting ambiance, coupled with exceptional service, ensures that every visit is special. Whether
+                you're joining us for a casual meal, a family celebration, or a romantic dinner, we strive to exceed
+                your expectations. Thank you for choosing URBAN UMAMI – we look forward to serving you and making your
+                dining experience unforgettable.
+        </div>
+    </main>
+    <footer><br><br>
+        <div class="foot">
+            <div>
+                <h3>URBAN UMAMI</h3>
+                <p>123 Flavor Street,<br>Gourmet City, Foodland 45678<br>Phone: (123) 456-7890<br>Email:
+                    urbanumami@gmail.com </p>
+            </div>
+            <div>
+                <h3>Timings</h3>
+                <p>Monday - Friday: 10:00 AM - 10:00 PM<br>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div style="display: flex; flex-direction: row; justify-content: center; gap: 42px;">
+                    <a href="www.facebook.com" style="font-size: 31px; color: #E6D9B9;"><i
+                            class="fa-brands fa-facebook"></i></a><br>
+                    <a href="www.instagram.com" style="font-size: 31px; color: #E6D9B9;"><i
+                            class="fa-brands fa-instagram"></i></a><br>
+                    <a href="www.x.com" style="font-size: 31px; color: #E6D9B9;"><i
+                            class="fa-brands fa-x-twitter"></i></a><br>
+                    <a href="www.linkedin.com" style="font-size: 31px; color: #E6D9B9;"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

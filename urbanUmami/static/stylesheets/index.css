@@ -1,0 +1,136 @@
+:root {
+    /* Color Variables */
+    --background-color-navbar: #492911;
+    --background-color-body: #E6D9B9;
+    --background-color-footer: #492911;
+    --text-color-navbar: #E6D9B9;
+    --text-color-footer: #E6D9B9;
+    --text-color-body: #492911;
+
+    /* Font Variables */
+    --font-weight-header: 700;
+    --font-weight-body: 400;
+    --font-weight-footer: 400;
+    --font-size-header: 18px;
+    --font-size-body: 16px;
+    --font-size-footer: 14px;
+    --h1-font-size: 28px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+
+}
+
+/* body and navbar css */
+body {
+    background-color: var(--background-color-body);
+    color: var(--text-color-body);
+}
+
+.navbar1 {
+    display: grid;
+    position: sticky;
+    top: 21px;
+    grid-template-columns: 1fr 4fr 1fr;
+    background-color: var(--background-color-navbar);
+    border: 2px solid black;
+    border-radius: 31px;
+    width: 68rem;
+    margin-left: 5rem;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    padding-left: 0px;
+    padding-top: 15px;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--text-color-navbar);
+    font-weight: var(--font-weight-header);
+    font-style: var(--font-size-header);
+}
+
+/* main bar content css */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#ico {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+#ico li {
+    text-decoration: none;
+    list-style: none;
+}
+
+#ico li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--text-color-body);
+}
+
+.img1 {
+    width: 300px;
+    height: 200px;
+    border-radius: 21px;
+    box-shadow: 1px 3px 18px rgba(0, 0, 0, 0.9);
+}
+
+/* footer css */
+.foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--background-color-footer);
+    box-shadow: 1px 3px 18px rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    width: 78rem;
+    height: fit-content;
+    margin-top: 50px;
+    text-align: center;
+    color: var(--text-color-footer);
+}
+
+.pa {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 0px 48px 12PX 48PX;
+    color: var(--text-color-body);
+}
+
+.m1,
+.m2,
+.m3 {
+    display: none;
+}
+
+#hem {
+    width: 79rem;
+    height: 25rem;
+    overflow-x: scroll;
+}
+
+#hem::-webkit-scrollbar {
+    display: none;
+    background: transparent;
+}
+/* end of index */

@@ -21,3 +21,6 @@ def profile(request):
 
 def reserve(request):
     return render(request, 'urbanUmami/reserve.html')
+
+def contact(request):
+    return render(request,'urbanUmami/contact.html')

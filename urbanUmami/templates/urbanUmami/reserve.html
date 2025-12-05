@@ -18,7 +18,7 @@
             <div class="navbar3">
                 <ul>
                     <li><a href="{% url 'index' %}">URBAN UMAMI</a></li>
-                    <li><a href="{% url 'menu' %}">MENU</a></li>
+                    <li><a href="{% url 'menu' %}" aria-disabled="true">MENU</a></li>
                     <li><a href="{% url 'order' %}">ORDERS</a></li>
                     <li><a href="{% url 'reserve' %}">RESERVE</a></li>
                     <li><a href="{% url 'about' %}">ABOUT-US</a></li>
@@ -33,7 +33,7 @@
     </header><br><br>
     <main>
         <div class="tab1">
-            <img src="{% static 'images/reserve.jpeg ' %}" alt="RESERVATION" class="img1">
+            <img src="{% static 'images/reserve.jpeg ' %}" alt="RESERVATION" class="img2">
             <p class="pa1">
                 Welcome to Urban Umami's reservation page! We are delighted that you are considering dining with us.
                 To ensure a seamless experience, please provide us with the following details to reserve your table:
@@ -74,5 +74,31 @@
             </div>
         </form>
     </main>
+    <footer>
+        <div class="foot">
+            <div>
+                <h3>URBAN UMAMI</h3>
+                <p>123 Flavor Street,<br>Gourmet City, Foodland 45678<br>Phone: (123) 456-7890<br>Email:
+                    urbanumami@gmail.com </p>
+            </div>
+            <div>
+                <h3>Timings</h3>
+                <p>Monday - Friday: 10:00 AM - 10:00 PM<br>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div style="display: flex; flex-direction: row; justify-content: center; gap: 42px;">
+                    <a href="www.facebook.com" style="font-size: 31px; color: #E6D9B9;"><i
+                            class="fa-brands fa-facebook"></i></a><br>
+                    <a href="www.instagram.com" style="font-size: 31px; color: #E6D9B9;"><i
+                            class="fa-brands fa-instagram"></i></a><br>
+                    <a href="www.x.com" style="font-size: 31px; color: #E6D9B9;"><i
+                            class="fa-brands fa-x-twitter"></i></a><br>
+                    <a href="www.linkedin.com" style="font-size: 31px; color: #E6D9B9;"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

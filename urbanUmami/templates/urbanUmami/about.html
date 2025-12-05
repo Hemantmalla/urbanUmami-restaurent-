@@ -7,6 +7,18 @@
     <title>URBAN UMAMI</title>
     <link rel="stylesheet" href="{% static 'stylesheets/index.css' %}">
     <link rel="stylesheet" href="{% static 'stylesheets/media.css' %}">
+    <script src="https://kit.fontawesome.com/22743b5cbb.js" crossorigin="anonymous"></script>
+    <style>
+        header {
+            background-image: url('{% static "images/aboutbanner.png" %}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 40rem;
+            border-radius: 15px;
+            box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.9);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -29,8 +41,81 @@
                     <li><a href="{% url 'profile' %}" style="position: relative; left: 60px;">LOGIN</a></li>
                 </ul>
             </div>
-        </nav> <br><br><br><br><br><br><br><br>
+        </nav> <br>
     </header>
-    <div></div>
+    <main>
+        <section>
+        <div class="restur">
+            <div>
+                <img src="{% static 'images/aboutimage.jpg' %}" alt="resturant" width="90%" height="40%">
+            </div>
+            <div class="about">
+                <h1>ABOUT US</h1>
+                <p>
+                    At Urban Umami, we bring together the rich flavors of Indian, Chinese, and Continental
+                    cuisines
+                    under one vibrant roof. Our goal is to create a dining experience that celebrates global
+                    taste while
+                    delivering comfort, quality, and creativity in every bite.
+                    <br><br>
+                    Indian Cuisine:
+                    We offer a wide range of authentic Indian dishes, from aromatic curries and flavorful
+                    biryanis to
+                    sizzling tandoor specials. Every recipe reflects the true essence of Indian spices,
+                    tradition, and
+                    warmth.
+                    <br><br>
+                    Chinese Cuisine:
+                    Our Chinese menu features classic favorites like noodles, fried rice, dim sum, and expertly
+                    crafted
+                    stir-fries. With perfect balance, fresh ingredients, and bold flavors, we bring you the best
+                    of
+                    Asian-inspired cooking.
+                    <br><br>
+                    Continental Cuisine:
+                    For those who enjoy subtle, elegant flavors, our Continental dishes showcase creamy sauces,
+                    grilled
+                    specialties, soups, salads, and perfectly plated meals. It’s a modern take on Western-style
+                    cuisine
+                    with a touch of sophistication.
+                    <br><br>
+                    At Urban Umami, we believe great food connects people. That’s why our chefs combine passion,
+                    skill,
+                    and creativity to offer a menu that satisfies every taste. Whether you’re craving something
+                    traditional, international, or comforting, Urban Umami is your destination for delicious
+                    moments.
+                </p>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div class="foot">
+            <div>
+                <h3>URBAN UMAMI</h3>
+                <p>123 Flavor Street,<br>Gourmet City, Foodland 45678<br>Phone: (123) 456-7890<br>Email:
+                    urbanumami@gmail.com </p>
+            </div>
+            <div>
+                <h3>Timings</h3>
+                <p>Monday - Friday: 10:00 AM - 10:00 PM<br>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div style="display: flex; flex-direction: row; justify-content: center; gap: 42px;">
+                    <a href="www.facebook.com" style="font-size: 31px; color: #E6D9B9;"><i
+                            class="fa-brands fa-facebook"></i></a><br>
+                    <a href="www.instagram.com" style="font-size: 31px; color: #E6D9B9;"><i
+                            class="fa-brands fa-instagram"></i></a><br>
+                    <a href="www.x.com" style="font-size: 31px; color: #E6D9B9;"><i
+                            class="fa-brands fa-x-twitter"></i></a><br>
+                    <a href="www.linkedin.com" style="font-size: 31px; color: #E6D9B9;"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

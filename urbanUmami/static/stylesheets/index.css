@@ -209,3 +209,71 @@ ul li a {
     padding: 30px;
 } 
 /*end of contact styles*/
+/* end of index */
+
+/* reserve css */
+.img1{
+    width: 48rem;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.9);
+}
+.reserve-form{
+    background-color: var(--background-color-navbar);
+    color: var(--text-color-navbar);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 355px;
+    margin: auto;
+
+}
+.reserve-form input{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+.reserve-form label{
+    display: inline-block;
+    width: 8rem;
+}
+.tab1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.pa1{
+    background-color: var(--background-color-navbar);
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 36px 52px 0PX 48PX;
+    border-radius: 21px;
+    color: var(--text-color-navbar);
+}
+
+.reserve-form button{
+    background-color: var(--background-color-body);
+    color: var(--text-color-body);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: var(--font-weight-header);
+    margin-left: 7rem;
+}
+/* end of reserve */
+
+/* profile css */
+.form-container {
+    background-color: var(--background-color-navbar);
+    color: var(--text-color-navbar);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+
+}
+/* end of profile */

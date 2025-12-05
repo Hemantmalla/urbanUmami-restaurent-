@@ -29,8 +29,20 @@
                     <li><a href="{% url 'profile' %}" style="position: relative; left: 60px;">LOGIN</a></li>
                 </ul>
             </div>
-        </nav> <br><br><br><br><br><br><br><br>
-    </header>
-    <div></div>
+        </nav> 
+    </header><br><br><br>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-container">
+            <h2>User Profile</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="{{ user.username }}" readonly><br><br>
+
+            <label for="email">Password:</label>
+            <input type="password" id="pass" name="password" value="{{ user.password }}" readonly><br><br>
+
+            <button type="submit">submit</button>
+        </div>
+    </form>
 </body>
 </html>

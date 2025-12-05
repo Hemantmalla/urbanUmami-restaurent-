@@ -32,9 +32,47 @@
         </nav>
     </header><br><br>
     <main>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="tab1">
+            <img src="{% static 'images/reserve.jpeg ' %}" alt="RESERVATION" class="img1">
+            <p class="pa1">
+                Welcome to Urban Umami's reservation page! We are delighted that you are considering dining with us.
+                To ensure a seamless experience, please provide us with the following details to reserve your table:
+                <br><br>
+                Full Name: Aesthete<br>
+                Contact Number: 1234567890<br>
+                Email Address: aesthete@gmail.com<br>
+                Date and Time of Reservation: 5/12/2025<br>
+                Number of Guests: 2<br>
+                Special Requests (if any): Privacy<br><br>
+            </p>
+        </div><br><br>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="reserve-form">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full_name" required><br><br>
+
+                <label for="contact-number">Contact Number:</label>
+                <input type="tel" id="contact-number" name="contact_number" required><br><br>
+
+                <label for="email-address">Email Address:</label>
+                <input type="email" id="email-address" name="email_address" required><br><br>
+
+                <label for="reservation-date">Date of Reservation:</label>
+                <input type="date" id="reservation-date" name="reservation_date" required><br><br>
+
+                <label for="reservation-time">Time of Reservation:</label>
+                <input type="time" id="reservation-time" name="reservation_time" required><br><br>
+
+                <label for="number-of-guests">Number of Guests:</label>
+                <input type="number" id="number-of-guests" name="number_of_guests" min="1" required><br><br>
+
+                <label for="special-requests">Special Requests:</label>
+                <textarea id="special-requests" name="special_requests"></textarea><br><br>
+
+                <button type="submit">Reserve Table</button>
+            </div>
+        </form>
     </main>
 </body>
 </html>

@@ -28,4 +28,5 @@ urlpatterns = [
     path('profile/', views.profile, name='profile'),
     path('reserve/', views.reserve, name='reserve'),
     path('contacts/',views.contact),
+    path('feedback/',views.feedback),
 ]

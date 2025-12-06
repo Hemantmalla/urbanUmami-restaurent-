@@ -24,3 +24,6 @@ def reserve(request):
 
 def contact(request):
     return render(request,'urbanUmami/contact.html')
+
+def feedback(request):
+    return render(request,'urbanUmami/feedback.html')

@@ -28,4 +28,8 @@ urlpatterns = [
     path('profile/', views.profile, name='profile'),
     path('reserve/', views.reserve, name='reserve'),
     path('contacts/',views.contact),
+    path('chinese/', views.chinese, name='chinese'),
+    path('indian/', views.indian, name='indian'),
+    path('continental/', views.continental, name='continental'),
+
 ]

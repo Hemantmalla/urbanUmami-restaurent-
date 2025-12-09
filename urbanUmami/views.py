@@ -24,3 +24,12 @@ def reserve(request):
 
 def contact(request):
     return render(request,'urbanUmami/contact.html')
+
+def chinese(request):
+    return render(request,'urbanUmami/chinese.html')
+
+def indian(request):
+    return render(request,'urbanUmami/indian.html')
+
+def continental(request):
+    return render(request,'urbanUmami/continental.html')

@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="{% static 'stylesheets/index.css' %}">
     <link rel="stylesheet" href="{% static 'stylesheets/media.css' %}">
 </head>
+
 <body>
     <header>
         <nav class="navbar1">
@@ -18,7 +20,7 @@
             <div class="navbar3">
                 <ul>
                     <li><a href="{% url 'index' %}">URBAN UMAMI</a></li>
-                    <li><a href="{% url 'menu' %}" >MENU</a></li>
+                    <li><a href="{% url 'menu' %}">MENU</a></li>
                     <li><a href="{% url 'order' %}">ORDERS</a></li>
                     <li><a href="{% url 'reserve' %}">RESERVE</a></li>
                     <li><a href="{% url 'about' %}">ABOUT-US</a></li>
@@ -29,8 +31,24 @@
                     <li><a href="{% url 'profile' %}" style="position: relative; left: 60px;">LOGIN</a></li>
                 </ul>
             </div>
-        </nav> <br><br><br><br><br><br><br><br>
+        </nav> <br><br>
     </header>
-    <div></div>
+    <div  class= "content">
+        <div class="main">
+            <div class="menu">
+                <h2 style="text-align: center;">Categories</h2>
+                <div class="me1"><li><a href="{% url 'indian' %}">Indian</a></li> </div>
+                <div class="me1"><li><a href="{% url 'chinese' %}">Chinese</a></li></div>
+                <div class="me1"><li><a href="{% url 'continental' %}">Continental</a></li></div>
+            </div>
+        
+        
+            <div class="menu-img"> 
+                <img src="{% static 'images/indian1.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+    
+    
 </body>
 </html>

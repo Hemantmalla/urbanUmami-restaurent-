@@ -116,9 +116,7 @@ ul li a {
   color: var(--text-color-body);
 }
 
-.m1,
-.m2,
-.m3 {
+.m1, .m2, .m3 {
   display: none;
 }
 
@@ -339,3 +337,45 @@ ul li a {
 
 }
 /* end of profile */
+/* menu css*/
+
+.me1{
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  list-style-type: none;
+  display: grid;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.me1:hover{
+    background-color: burlywood;
+}
+button{
+    padding-right: 10px;
+}
+.content {
+    display: flex;
+    align-items:flex-start;
+    padding-left:0px;
+}
+   
+
+.menu-img img {
+    width: 100%;
+    border-radius: 30px;
+}
+.me1 a:visited { color: #f7f0d8; } .me1 a:hover { color: #e1b764; }
+
+.main{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-content: space-evenly;
+gap:10px;
+}
+.menu{
+  background-color: var(--background-color-navbar);
+  color:var(--text-color-navbar);
+  border-radius:30px;
+}
+
+/* end of menu */ 

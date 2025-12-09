@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'stylesheets/chinese.css' %}">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <title>Document</title>
+    <script>
+      $( function() {
+        $( "#accordion" ).accordion();
+      });
+    </script>
+</head>
+<body>
+  <h1 style="text-align: center; font-family:Georgia, 'Times New Roman', Times, serif sans-serif;">Chinese dishes(中國菜)</h1>
+  <button id="orderBtn" class="order-btn">Order Now</button>
+
+  <div class="header">
+    <div class="content">
+        <div class="menu">
+            <h2 style="text-align: center;">Categories</h2>
+            <div class="me1"><li><a href="{% url 'indian' %}">Indian</a></li></div>
+            <div class="me1"><li><a href="{% url 'chinese' %}">Chinese</a></li></div>
+            <div class="me1"><li><a href="{% url 'continental' %}">Continental</a></li></div>
+        </div>
+    </div>
+
+    <div class="main">
+      <div id="accordion">
+
+      <h3>Soups</h3>
+<div>
+    <div class="cards-grid">
+
+        <div class="food-card">
+            <img src="{% static 'images/chinese soups/Hot and Sour Soup.jpg' %}">
+            <h3>Hot and Sour Soup</h3>
+            <p>₹120</p>
+            <button class="add-btn">Add</button>
+        </div>
+
+        <div class="food-card">
+            <img src="{% static 'images/chinese soups/manchow_soup.jpg' %}">
+            <h3>Manchow Soup</h3>
+            <p>₹130</p>
+            <button class="add-btn">Add</button>
+        </div>
+
+        <div class="food-card">
+            <img src="{% static 'images/chinese soups/Sweet Corn Soup.jpg' %}">
+            <h3>Sweet Corn Soup</h3>
+            <p>₹110</p>
+            <button class="add-btn">Add</button>
+        </div>
+
+        <div class="food-card">
+            <img src="{% static 'images/chinese soups/Chicken Sweet Corn Soup.jpg' %}">
+            <h3>Chicken Sweet Corn Soup</h3>
+            <p>₹150</p>
+            <button class="add-btn">Add</button>
+        </div>
+
+    </div>
+</div>
+      <h3>Appetizers</h3>
+      <div>
+      <div class="cards-grid">
+        <div class="food-card">
+          <img src="{% static 'images/chinese app/momos.jpg' %}" class="soup-image">
+          <h3>Chicken Momos-130/-</h3>
+          <p>₹130</p>
+            <button class="add-btn">Add</button>
+        </div>
+        <div class="food-card">
+          <img src="{% static 'images/chinese app/spring rolls.jpg' %}" class="soup-image">
+          <h3>Spring Roll-120/-</h3>
+          <p>₹120</p>
+            <button class="add-btn">Add</button>
+        </div>
+
+        <div class="food-card">
+          <img src="{% static 'images/chinese app/chilli chicken.jpg' %}" class="soup-image">
+          <h3>Chilli Chicken -180/-</h3>
+          <p>₹180</p>
+            <button class="add-btn">Add</button>
+        </div>
+
+        <div class="food-card">
+          <img src="{% static 'images/chinese app/sushi.jpg' %}" class="soup-image">
+          <h3>Sushi -250/-</h3>
+          <p>₹250</p>
+            <button class="add-btn">Add</button>
+        </div>
+      </div>
+      </div>
+
+      <h3>Main Dishes</h3>
+      <div>
+      <div class="cards-grid">
+
+        <div class="food-card">
+          <img src="{% static 'images/chinese main course/panner fried rice.jpg' %}" class="soup-image">
+          <h3>Schezwan Paneer Fried Rice</h3>
+          <p>₹200</p>
+          <button class="add-btn">Add</button>
+        </div>
+
+        <div class="food-card">
+          <img src="{% static 'images/chinese main course/chicken fried rice.jpg' %}" class="soup-image">
+          <h3>Fried Rice</h3>
+          <p>₹250</p>
+          <button class="add-btn">Add</button>
+        </div>
+
+        <div class="food-card">
+          <img src="{% static 'images/chinese main course/chicken noodles.jpg' %}" class="soup-image">
+          <h3>Chicken Noodles</h3>
+          <p>₹220</p>
+          <button class="add-btn">Add</button>
+        </div>
+
+        <div class="food-card">
+          <img src="{% static 'images/chinese main course/veg manchurian.jpg' %}" class="soup-image">
+          <h3>Veg Manchurian</h3>
+          <p>₹180</p>
+           <button class="add-btn">Add</button> 
+        </div>
+      </div>
+      </div>
+
+      <h3>Desserts</h3>
+      <div class="cards-grid">
+        <div class="food-card">
+          <img src="{% static 'images/chinese desserts/mooncake.jpg' %}" class="soup-image">
+          <h3>mooncake</h3>
+          <p>₹150</p>
+          <button class="add-btn">Add</button>  
+        </div>
+
+        <div class="food-card">
+          <img src="{% static 'images/chinese desserts/egg tart.jpg' %}" class="soup-image">
+          <h3>egg tart</h3>
+          <p>₹80</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

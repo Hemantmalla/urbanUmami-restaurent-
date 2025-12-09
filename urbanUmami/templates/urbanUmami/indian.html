@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'stylesheets/chinese.css' %}">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <title>Document</title>
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
+    </script>
+</head>
+
+<body>
+
+<h1 style="text-align: center; font-family:Georgia, 'Times New Roman', Times, serif;">Indian Dishes</h1>
+
+<div class="header">
+
+    <div class="content">
+        <div class="menu">
+            <h2 style="text-align: center;">Categories</h2>
+            <div class="me1"><li><a href="{% url 'indian' %}">Indian</a></li></div>
+            <div class="me1"><li><a href="{% url 'chinese' %}">Chinese</a></li></div>
+            <div class="me1"><li><a href="{% url 'continental' %}">Continental</a></li></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div id="accordion">
+
+           
+           <h3>Tiffins</h3>
+<div>
+    <div class="cards-grid">
+        <div class="food-card">
+            <img src="{% static 'images/indian tiffins/idly.jpg' %}" class="soup-image">
+            <h3>Idli (2 pcs)</h3>
+            <p>₹50</p>
+            <button class="add-btn">Add</button>
+        </div>
+
+        <div class="food-card">
+            <img src="{% static 'images/indian tiffins/masala dosa.jpg' %}" class="soup-image">
+            <h3>Masala Dosa</h3>
+            <p>₹70</p>
+            <button class="add-btn">Add</button>
+        </div>
+
+        <div class="food-card">
+            <img src="{% static 'images/indian tiffins/poori.jpg' %}" class="soup-image">
+            <h3>Poori (3 pcs)</h3>
+            <p>₹60</p>
+            <button class="add-btn">Add</button>
+        </div>
+    
+        <div class="food-card">
+            <img src="{% static 'images/indian tiffins/vada.jpg' %}" class="soup-image">
+            <h3>Medu Vada (2 pcs)</h3>
+            <p>₹40</p>
+            <button class="add-btn">Add</button>
+        </div>
+    </div>
+
+</div>
+
+         
+            <h3>Appetizers</h3>
+            <div>
+                <div class="cards-grid">
+                    <div class="food-card">
+                        <img src="{% static 'images/indian app/paneer tikka.jpg' %}" class="soup-image">
+                        <h3>Paneer Tikka</h3>
+                        <p>₹180</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+
+                <div class="food-card">
+                    <img src="{% static 'images/indian app/samosa.jpg' %}" class="soup-image">
+                    <h3>Samosa</h3>
+                    <p>₹60</p>
+                    <button class="add-btn">Add</button>    
+                </div>
+
+                <div class="food-card">
+                    <img src="{% static 'images/indian app/chicken 65.jpg' %}" class="soup-image">
+                    <h3>Chicken 65</h3>
+                    <p>₹150</p>
+                    <button class="add-btn">Add</button>    
+                </div>
+
+                <div class="food-card">
+                    <img src="{% static 'images/indian app/bhel puri.jpg' %}" class="soup-image">
+                    <h3>Bhel Puri</h3>
+                    <p>₹70</p>
+                    <button class="add-btn">Add</button>
+                </div>
+            </div>
+            </div>
+
+        <h3>Main Dishes</h3>
+        <div>
+        <div class="cards-grid">
+
+                <div class="food-card">
+                    <img src="{% static 'images/indian main/butter chicken.jpg' %}" class="soup-image">
+                    <h3>Butter Chicken</h3>
+                    <p>₹260</p>
+                    <button class="add-btn">Add</button>
+                </div>
+
+                <div class="food-card">
+                    <img src="{% static 'images/indian main/cb.jpg' %}" class="soup-image">
+                    <h3>Chicken Biryani</h3>
+                    <p>₹240</p>
+                    <button class="add-btn">Add</button>
+                </div>
+
+                <div class="food-card" >
+                    <img src="{% static 'images/indian main/paneer butter masala.jpg' %}" class="soup-image">
+                    <h3>Paneer Butter Masala</h3>
+                    <p>₹180</p>
+                    <button class="add-btn">Add</button>
+                </div>
+
+                <div class="food-card">
+                    <img src="{% static 'images/indian main/veg thali.jpg' %}" class="soup-image">
+                    <h3>Veg Thali</h3>
+                    <p>₹160</p>
+                    <button class="add-btn">Add</button>
+                </div>
+            </div>
+            </div>
+
+            <h3>Desserts</h3>
+        <div>
+            <div class="cards-grid">
+
+                <div class="food-card">
+                    <img src="{% static 'images/indian dessert/gulab jamun.jpg' %}" class="soup-image">
+                    <h3>Gulab Jamun</h3>
+                    <p>₹60</p>
+                    <button class="add-btn">Add</button>
+                </div>
+                <div class="food-card">
+                    <img src="{% static 'images/indian dessert/jalebi.jpg' %}" class="soup-image">
+                    <h3>Jalebi</h3>
+                    <p>₹50</p>
+                    <button class="add-btn">Add</button>                
+                </div>
+
+                <div class="food-card">
+                    <img src="{% static 'images/indian dessert/rasgulla.jpg' %}" class="soup-image">
+                    <h3>Rasgulla</h3>
+                    <p>₹70</p>
+                    <button class="add-btn">Add</button>
+                </div>
+
+                <div class="food-card">
+                    <img src="{% static 'images/indian dessert/kheer.jpg' %}" class="soup-image">
+                    <h3>Kheer</h3>
+                    <p>₹80</p>
+                    <button class="add-btn">Add</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

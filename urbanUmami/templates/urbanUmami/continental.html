@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'stylesheets/continental.css' %}">
+     <link rel="stylesheet" href="{% static 'stylesheets/chinese.css' %}">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <title>Continental Dishes</title>
+
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
+    </script>
+</head>
+
+<body>
+    <h1 style="text-align: center; font-family:Georgia, 'Times New Roman', Times, serif;">
+        Continental Dishes
+    </h1>
+
+    <div class="header">
+        <div class="content">
+
+            <div class="menu">
+                <h2 style="text-align: center;">Categories</h2>
+                <div class="me1"><li><a href="{% url 'indian' %}">Indian</a></li></div>
+                <div class="me1"><li><a href="{% url 'chinese' %}">Chinese</a></li></div>
+                <div class="me1"><li><a href="{% url 'continental' %}">Continental</a></li></div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div id="accordion">
+
+               
+                <h3>Appetizers</h3>
+                <div>
+                    <div class="cards-grid">
+                        <div class="food-card">
+                            <img src="{% static 'images/continental app/garlicbread.jpg'%}" class="soup-image">
+                            <h3>Garlic Bread </h3>
+                            <p>₹120</p>
+                           <button class="add-btn">Add</button>
+
+                        </div>
+
+                    <div class="food-card">
+                        <img src="{% static 'images/continental app/grilled chicken wings.jpg' %}" class="soup-image">
+                        <h3>Grilled Chicken Wings </h3>
+                        <p>₹180</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="{% static 'images/continental app/bruschetta.jpg' %}" class="soup-image">
+                        <h3>Bruschetta </h3>
+                        <p>₹150</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+                </div>
+                </div>
+
+                
+                <h3>Main Course</h3>
+                <div>
+                 <div  class="cards-grid">
+                    <div class="food-card">
+                        <img src="{% static 'images/continental main/grilled chicken steak.jpg' %}" class="soup-image">
+                        <h3>Grilled Chicken Steak </h3>
+                        <p>₹320</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="{% static 'images/continental main/pasta alfredo white.jpg' %}" class="soup-image">
+                        <h3>Pasta Alfredo </h3>
+                        <p>₹260</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="{% static 'images/continental main/vegetable lasagna.jpg' %}" class="soup-image">
+                        <h3>Vegetable Lasagna </h3>
+                        <p>₹280</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="{% static 'images/continental main/herb grilled fish.jpg' %}" class="soup-image">
+                        <h3>Herb Grilled Fish </h3>
+                        <p>₹350</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+                </div>
+                </div>
+
+                
+                <h3>Salads</h3>
+                <div>
+                 <div  class="cards-grid">
+                    <div class="food-card">
+                        <img src="{% static 'images/continental salads/caesar salad.jpg' %}" class="soup-image">
+                        <h3>Caesar Salad </h3>
+                        <p>₹180</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="{% static 'images/continental salads/greek salad.jpg' %}" class="soup-image">
+                        <h3>Greek Salad </h3>
+                        <p>₹190</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    <div class="food-card">
+                        <img src="{% static 'images/continental salads/caprese salad.jpg' %}" class="soup-image">
+                        <h3>Caprese Salad </h3>
+                        <p>₹200</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+                </div>
+                </div>
+
+               
+                <h3>Desserts</h3>
+                <div>
+                <div class="cards-grid">
+                    <div class="food-card">
+                        <img src="{% static 'images/continental desserts/cheesecake.jpg' %}" class="soup-image">
+                        <h3>Cheesecake </h3>
+                        <p>₹200</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="{% static 'images/continental desserts/chocolate brownie.jpg' %}" class="soup-image">
+                        <h3>Chocolate Brownie </h3>
+                        <p>₹120</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    <div class="food-card">
+                        <img src="{% static 'images/continental desserts/tiramisu.jpg' %}" class="soup-image">
+                        <h3>Tiramisu </h3>
+                        <p>₹180</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

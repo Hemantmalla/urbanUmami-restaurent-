@@ -28,8 +28,12 @@ urlpatterns = [
     path('profile/', views.profile, name='profile'),
     path('reserve/', views.reserve, name='reserve'),
     path('contacts/',views.contact),
+<<<<<<< HEAD
     path('chinese/', views.chinese, name='chinese'),
     path('indian/', views.indian, name='indian'),
     path('continental/', views.continental, name='continental'),
 
+=======
+    path('feedback/',views.feedback),
+>>>>>>> e732168a4c7c98e402982b6b67e00c8d950dbdd8
 ]

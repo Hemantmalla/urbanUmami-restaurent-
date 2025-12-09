@@ -25,6 +25,7 @@ def reserve(request):
 def contact(request):
     return render(request,'urbanUmami/contact.html')
 
+<<<<<<< HEAD
 def chinese(request):
     return render(request,'urbanUmami/chinese.html')
 
@@ -33,3 +34,7 @@ def indian(request):
 
 def continental(request):
     return render(request,'urbanUmami/continental.html')
+=======
+def feedback(request):
+    return render(request,'urbanUmami/feedback.html')
+>>>>>>> e732168a4c7c98e402982b6b67e00c8d950dbdd8
